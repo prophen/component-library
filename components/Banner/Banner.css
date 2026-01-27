@@ -1,0 +1,110 @@
+.banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 800px;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-family: Inter, sans-serif;
+}
+
+.banner-icon {
+  flex-shrink: 0;
+  margin-top: 0.125rem;
+}
+
+.banner-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.banner-title {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+}
+
+.banner-description {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+}
+
+.banner-text {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+}
+
+/* Single-line variant */
+.banner.variant-single-line {
+  align-items: center;
+  padding: 0.75rem 1rem;
+}
+
+.banner.variant-single-line .banner-icon {
+  margin-top: 0;
+}
+
+/* Status colors - Success */
+.banner.status-success {
+  background-color: #ecfdf5;
+}
+.banner.status-success .banner-icon {
+  color: #34d399;
+}
+.banner.status-success .banner-title,
+.banner.status-success .banner-text {
+  color: #065f46;
+}
+.banner.status-success .banner-description {
+  color: #047857;
+}
+
+/* Status colors - Warning */
+.banner.status-warning {
+  background-color: #fffbeb;
+}
+.banner.status-warning .banner-icon {
+  color: #fbbf24;
+}
+.banner.status-warning .banner-title,
+.banner.status-warning .banner-text {
+  color: #92400e;
+}
+.banner.status-warning .banner-description {
+  color: #b45309;
+}
+
+/* Status colors - Error */
+.banner.status-error {
+  background-color: #fef2f2;
+}
+.banner.status-error .banner-icon {
+  color: #f87171;
+}
+.banner.status-error .banner-title,
+.banner.status-error .banner-text {
+  color: #92400e;
+}
+.banner.status-error .banner-description {
+  color: #b45309;
+}
+
+/* Status colors - Neutral */
+.banner.status-neutral {
+  background-color: #eff6ff;
+}
+.banner.status-neutral .banner-icon {
+  color: #60a5fa;
+}
+.banner.status-neutral .banner-title,
+.banner.status-neutral .banner-text {
+  color: #1e40af;
+}
+.banner.status-neutral .banner-description {
+  color: #1c51b9;
+}
