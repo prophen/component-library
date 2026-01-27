@@ -59,58 +59,60 @@ function MyComponent() {
       </div>
 
       <h3>Props</h3>
-      <table className="props-table">
-        <thead>
-          <tr>
-            <th>Component</th>
-            <th>Prop</th>
-            <th>Type</th>
-            <th>Description</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <code>Menu</code>
-            </td>
-            <td>
-              <code>onOpen</code>
-            </td>
-            <td>function</td>
-            <td>Callback fired when menu opens/closes</td>
-          </tr>
-          <tr>
-            <td>
-              <code>Menu.Button</code>
-            </td>
-            <td>
-              <code>children</code>
-            </td>
-            <td>node</td>
-            <td>Button content</td>
-          </tr>
-          <tr>
-            <td>
-              <code>Menu.Dropdown</code>
-            </td>
-            <td>
-              <code>children</code>
-            </td>
-            <td>node</td>
-            <td>Menu items</td>
-          </tr>
-          <tr>
-            <td>
-              <code>Menu.Item</code>
-            </td>
-            <td>
-              <code>children</code>
-            </td>
-            <td>node</td>
-            <td>Item content</td>
-          </tr>
-        </tbody>
-      </table>
+      <div className="table-container">
+        <table className="props-table">
+          <thead>
+            <tr>
+              <th>Component</th>
+              <th>Prop</th>
+              <th>Type</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <code>Menu</code>
+              </td>
+              <td>
+                <code>onOpen</code>
+              </td>
+              <td>function</td>
+              <td>Callback fired when menu opens/closes</td>
+            </tr>
+            <tr>
+              <td>
+                <code>Menu.Button</code>
+              </td>
+              <td>
+                <code>children</code>
+              </td>
+              <td>node</td>
+              <td>Button content</td>
+            </tr>
+            <tr>
+              <td>
+                <code>Menu.Dropdown</code>
+              </td>
+              <td>
+                <code>children</code>
+              </td>
+              <td>node</td>
+              <td>Menu items</td>
+            </tr>
+            <tr>
+              <td>
+                <code>Menu.Item</code>
+              </td>
+              <td>
+                <code>children</code>
+              </td>
+              <td>node</td>
+              <td>Item content</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
   );
 }

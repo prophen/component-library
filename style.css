@@ -6,8 +6,7 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 40px 20px;
-  display: flex;
-  justify-content: center;
+  display: block;
   font-family:
     "Inter",
     -apple-system,
@@ -30,6 +29,7 @@ body {
 .container {
   max-width: 1200px;
   width: 100%;
+  margin: 0 auto;
   background: white;
   border-radius: 16px;
   padding: 48px;
@@ -183,4 +183,48 @@ h3 {
   font-size: 0.875rem;
   color: #667eea;
   font-family: "Monaco", "Courier New", monospace;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  body {
+    padding: 20px 16px;
+  }
+
+  .container {
+    padding: 24px 20px;
+    border-radius: 12px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 32px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-top: 32px;
+  }
+
+  .component-demo {
+    padding: 20px;
+  }
+
+  .table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+  }
+
+  .props-table {
+    min-width: 600px; /* Ensure table doesn't squash too much */
+  }
+
+  .hide-on-mobile {
+    display: none;
+  }
 }

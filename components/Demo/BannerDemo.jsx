@@ -112,64 +112,66 @@ function MyComponent() {
       </div>
 
       <h3>Props</h3>
-      <table className="props-table">
-        <thead>
-          <tr>
-            <th>Prop</th>
-            <th>Type</th>
-            <th>Options</th>
-            <th>Default</th>
-            <th>Description</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <code>status</code>
-            </td>
-            <td>string</td>
-            <td>
-              <code>"success"</code>, <code>"warning"</code>,{" "}
-              <code>"error"</code>, <code>"neutral"</code>
-            </td>
-            <td>
-              <code>"neutral"</code>
-            </td>
-            <td>Banner status type (affects color and icon)</td>
-          </tr>
-          <tr>
-            <td>
-              <code>variant</code>
-            </td>
-            <td>string</td>
-            <td>
-              <code>"multi-line"</code>, <code>"single-line"</code>
-            </td>
-            <td>
-              <code>"multi-line"</code>
-            </td>
-            <td>Banner layout variant</td>
-          </tr>
-          <tr>
-            <td>
-              <code>title</code>
-            </td>
-            <td>string</td>
-            <td>any</td>
-            <td>-</td>
-            <td>Banner title text (required)</td>
-          </tr>
-          <tr>
-            <td>
-              <code>children</code>
-            </td>
-            <td>node</td>
-            <td>any</td>
-            <td>-</td>
-            <td>Description text (multi-line variant only)</td>
-          </tr>
-        </tbody>
-      </table>
+      <div className="table-container">
+        <table className="props-table">
+          <thead>
+            <tr>
+              <th>Prop</th>
+              <th>Type</th>
+              <th>Options</th>
+              <th>Default</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <code>status</code>
+              </td>
+              <td>string</td>
+              <td>
+                <code>"success"</code>, <code>"warning"</code>,{" "}
+                <code>"error"</code>, <code>"neutral"</code>
+              </td>
+              <td>
+                <code>"neutral"</code>
+              </td>
+              <td>Banner status type (affects color and icon)</td>
+            </tr>
+            <tr>
+              <td>
+                <code>variant</code>
+              </td>
+              <td>string</td>
+              <td>
+                <code>"multi-line"</code>, <code>"single-line"</code>
+              </td>
+              <td>
+                <code>"multi-line"</code>
+              </td>
+              <td>Banner layout variant</td>
+            </tr>
+            <tr>
+              <td>
+                <code>title</code>
+              </td>
+              <td>string</td>
+              <td>any</td>
+              <td>-</td>
+              <td>Banner title text (required)</td>
+            </tr>
+            <tr>
+              <td>
+                <code>children</code>
+              </td>
+              <td>node</td>
+              <td>any</td>
+              <td>-</td>
+              <td>Description text (multi-line variant only)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
   );
 }

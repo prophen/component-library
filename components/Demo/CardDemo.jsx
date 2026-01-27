@@ -81,93 +81,95 @@ function MyComponent() {
       </div>
 
       <h3>Props</h3>
-      <table className="props-table">
-        <thead>
-          <tr>
-            <th>Prop</th>
-            <th>Type</th>
-            <th>Default</th>
-            <th>Description</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td colSpan="4" className="table-subheader">
-              <strong>Card</strong>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <code>children</code>
-            </td>
-            <td>node</td>
-            <td>-</td>
-            <td>
-              The content of the card, typically <code>Card.Icon</code>,{" "}
-              <code>Card.Title</code>, and <code>Card.Description</code>
-            </td>
-          </tr>
-          <tr>
-            <td colSpan="4" className="table-subheader">
-              <strong>Card.Title</strong>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <code>children</code>
-            </td>
-            <td>node</td>
-            <td>-</td>
-            <td>The title text</td>
-          </tr>
-          <tr>
-            <td colSpan="4" className="table-subheader">
-              <strong>Card.Description</strong>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <code>children</code>
-            </td>
-            <td>node</td>
-            <td>-</td>
-            <td>The description text</td>
-          </tr>
-          <tr>
-            <td colSpan="4" className="table-subheader">
-              <strong>Card.Icon</strong>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <code>icon</code>
-            </td>
-            <td>node</td>
-            <td>-</td>
-            <td>The icon element (e.g., from react-icons)</td>
-          </tr>
-          <tr>
-            <td>
-              <code>backgroundColor</code>
-            </td>
-            <td>string</td>
-            <td>
-              <code>#4f7df3</code>
-            </td>
-            <td>Background color of the icon container</td>
-          </tr>
-          <tr>
-            <td>
-              <code>color</code>
-            </td>
-            <td>string</td>
-            <td>
-              <code>#fff</code>
-            </td>
-            <td>Color of the icon</td>
-          </tr>
-        </tbody>
-      </table>
+      <div className="table-container">
+        <table className="props-table">
+          <thead>
+            <tr>
+              <th>Prop</th>
+              <th>Type</th>
+              <th>Default</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colSpan="4" className="table-subheader">
+                <strong>Card</strong>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code>children</code>
+              </td>
+              <td>node</td>
+              <td>-</td>
+              <td>
+                The content of the card, typically <code>Card.Icon</code>,{" "}
+                <code>Card.Title</code>, and <code>Card.Description</code>
+              </td>
+            </tr>
+            <tr>
+              <td colSpan="4" className="table-subheader">
+                <strong>Card.Title</strong>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code>children</code>
+              </td>
+              <td>node</td>
+              <td>-</td>
+              <td>The title text</td>
+            </tr>
+            <tr>
+              <td colSpan="4" className="table-subheader">
+                <strong>Card.Description</strong>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code>children</code>
+              </td>
+              <td>node</td>
+              <td>-</td>
+              <td>The description text</td>
+            </tr>
+            <tr>
+              <td colSpan="4" className="table-subheader">
+                <strong>Card.Icon</strong>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code>icon</code>
+              </td>
+              <td>node</td>
+              <td>-</td>
+              <td>The icon element (e.g., from react-icons)</td>
+            </tr>
+            <tr>
+              <td>
+                <code>backgroundColor</code>
+              </td>
+              <td>string</td>
+              <td>
+                <code>#4f7df3</code>
+              </td>
+              <td>Background color of the icon container</td>
+            </tr>
+            <tr>
+              <td>
+                <code>color</code>
+              </td>
+              <td>string</td>
+              <td>
+                <code>#fff</code>
+              </td>
+              <td>Color of the icon</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
   );
 }

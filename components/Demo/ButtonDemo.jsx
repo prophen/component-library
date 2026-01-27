@@ -86,69 +86,71 @@ function MyComponent() {
       </div>
 
       <h3>Props</h3>
-      <table className="props-table">
-        <thead>
-          <tr>
-            <th>Prop</th>
-            <th>Type</th>
-            <th>Options</th>
-            <th>Default</th>
-            <th>Description</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <code>size</code>
-            </td>
-            <td>string</td>
-            <td>
-              <code>"sm"</code>, <code>"lg"</code>
-            </td>
-            <td>default</td>
-            <td>Button size variant</td>
-          </tr>
-          <tr>
-            <td>
-              <code>variant</code>
-            </td>
-            <td>string</td>
-            <td>
-              <code>"success"</code>, <code>"warning"</code>,{" "}
-              <code>"danger"</code>
-            </td>
-            <td>default</td>
-            <td>Button color variant</td>
-          </tr>
-          <tr>
-            <td>
-              <code>className</code>
-            </td>
-            <td>string</td>
-            <td>any</td>
-            <td>-</td>
-            <td>Additional CSS classes</td>
-          </tr>
-          <tr>
-            <td>
-              <code>children</code>
-            </td>
-            <td>node</td>
-            <td>any</td>
-            <td>-</td>
-            <td>Button content</td>
-          </tr>
-          <tr>
-            <td>
-              <code>...rest</code>
-            </td>
-            <td>any</td>
-            <td>any</td>
-            <td>-</td>
-            <td>All standard button HTML attributes</td>
-          </tr>
-        </tbody>
-      </table>
+      <div className="table-container">
+        <table className="props-table">
+          <thead>
+            <tr>
+              <th>Prop</th>
+              <th>Type</th>
+              <th>Options</th>
+              <th>Default</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <code>size</code>
+              </td>
+              <td>string</td>
+              <td>
+                <code>"sm"</code>, <code>"lg"</code>
+              </td>
+              <td>default</td>
+              <td>Button size variant</td>
+            </tr>
+            <tr>
+              <td>
+                <code>variant</code>
+              </td>
+              <td>string</td>
+              <td>
+                <code>"success"</code>, <code>"warning"</code>,{" "}
+                <code>"danger"</code>
+              </td>
+              <td>default</td>
+              <td>Button color variant</td>
+            </tr>
+            <tr>
+              <td>
+                <code>className</code>
+              </td>
+              <td>string</td>
+              <td>any</td>
+              <td>-</td>
+              <td>Additional CSS classes</td>
+            </tr>
+            <tr>
+              <td>
+                <code>children</code>
+              </td>
+              <td>node</td>
+              <td>any</td>
+              <td>-</td>
+              <td>Button content</td>
+            </tr>
+            <tr>
+              <td>
+                <code>...rest</code>
+              </td>
+              <td>any</td>
+              <td>any</td>
+              <td>-</td>
+              <td>All standard button HTML attributes</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
   );
 }

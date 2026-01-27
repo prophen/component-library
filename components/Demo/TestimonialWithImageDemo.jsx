@@ -28,9 +28,11 @@ export default function TestimonialWithImageDemo() {
             and depth of creativity are astounding!"
           </TestimonialWithImage>
         </div>
-        <h3>Mobile</h3>
-        <div className="demo-group">
-          <img src="/mobile.png" alt="mobile testimonial view" />
+        <div className="hide-on-mobile">
+          <h3>Mobile</h3>
+          <div className="demo-group">
+            <img src="/mobile.png" alt="mobile testimonial view" />
+          </div>
         </div>
       </div>
 
@@ -63,53 +65,55 @@ function MyComponent() {
       </div>
 
       <h3>Props</h3>
-      <table className="props-table">
-        <thead>
-          <tr>
-            <th>Prop</th>
-            <th>Type</th>
-            <th>Default</th>
-            <th>Description</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <code>children</code>
-            </td>
-            <td>node</td>
-            <td>-</td>
-            <td>The testimonial quote text</td>
-          </tr>
-          <tr>
-            <td>
-              <code>img</code>
-            </td>
-            <td>object</td>
-            <td>-</td>
-            <td>
-              Object containing <code>src</code> and <code>alt</code> for the
-              image
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <code>name</code>
-            </td>
-            <td>string</td>
-            <td>-</td>
-            <td>Name of the author</td>
-          </tr>
-          <tr>
-            <td>
-              <code>title</code>
-            </td>
-            <td>string</td>
-            <td>-</td>
-            <td>Job title or company of the author</td>
-          </tr>
-        </tbody>
-      </table>
+      <div className="table-container">
+        <table className="props-table">
+          <thead>
+            <tr>
+              <th>Prop</th>
+              <th>Type</th>
+              <th>Default</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <code>children</code>
+              </td>
+              <td>node</td>
+              <td>-</td>
+              <td>The testimonial quote text</td>
+            </tr>
+            <tr>
+              <td>
+                <code>img</code>
+              </td>
+              <td>object</td>
+              <td>-</td>
+              <td>
+                Object containing <code>src</code> and <code>alt</code> for the
+                image
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code>name</code>
+              </td>
+              <td>string</td>
+              <td>-</td>
+              <td>Name of the author</td>
+            </tr>
+            <tr>
+              <td>
+                <code>title</code>
+              </td>
+              <td>string</td>
+              <td>-</td>
+              <td>Job title or company of the author</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
   );
 }
