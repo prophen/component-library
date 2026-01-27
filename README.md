@@ -123,6 +123,141 @@ function App() {
 | `children`  | node   | any                                  | -       | Button content                                                |
 | `...rest`   | any    | any                                  | -       | All standard button HTML attributes (onClick, disabled, etc.) |
 
+---
+
+### Badge Component
+
+Versatile badges for status indicators and labels.
+
+**Features:**
+
+- Multiple color options
+- Pill and square styles
+- Customizable content
+
+**Basic Usage:**
+
+```jsx
+import Badge from "./components/Badge/Badge";
+
+<Badge color="green">Success</Badge>
+<Badge color="red" style="pill">Error</Badge>
+```
+
+**Props:**
+
+| Prop       | Type   | Options                                                      | Default | Description   |
+| ---------- | ------ | ------------------------------------------------------------ | ------- | ------------- |
+| `children` | node   | any                                                          | -       | Badge content |
+| `color`    | string | "red", "yellow", "green", "blue", "indigo", "purple", "pink" | -       | Color theme   |
+| `style`    | string | "pill"                                                       | -       | Shape style   |
+
+---
+
+### Banner Component
+
+Prominent banners for global messages and status updates.
+
+**Features:**
+
+- Multi-line and single-line variants
+- Status themes (success, warning, error, neutral)
+- Automatic icons based on status
+
+**Basic Usage:**
+
+```jsx
+import Banner from "./components/Banner/Banner";
+
+<Banner status="success" title="Congratulations!">
+  Your application was saved successfully.
+</Banner>
+
+<Banner status="warning" variant="single-line" title="Please update your profile" />
+```
+
+**Props:**
+
+| Prop       | Type   | Options                                  | Default      | Description                 |
+| ---------- | ------ | ---------------------------------------- | ------------ | --------------------------- |
+| `status`   | string | "success", "warning", "error", "neutral" | "neutral"    | Status theme                |
+| `variant`  | string | "multi-line", "single-line"              | "multi-line" | Layout variant              |
+| `title`    | string | any                                      | -            | Main title text             |
+| `children` | node   | any                                      | -            | Description text (optional) |
+
+---
+
+### Card Component
+
+A compound component for displaying content in a structured card format.
+
+**Features:**
+
+- Flexible compound component structure
+- Custom icon support with color options
+- Consistent styling for titles and descriptions
+
+**Basic Usage:**
+
+```jsx
+import Card from "./components/Card/Card";
+import { HiCloudUpload } from "react-icons/hi";
+
+<Card>
+  <Card.Icon icon={<HiCloudUpload />} color="white" backgroundColor="#3F75FE" />
+  <Card.Title>Easy Deployment</Card.Title>
+  <Card.Description>Deploy your app with a single click.</Card.Description>
+</Card>;
+```
+
+**Props:**
+
+**Card.Icon Props:**
+
+| Prop              | Type   | Default   | Description           |
+| ----------------- | ------ | --------- | --------------------- |
+| `icon`            | node   | -         | Icon element          |
+| `color`           | string | "#fff"    | Icon color            |
+| `backgroundColor` | string | "#4f7df3" | Icon background color |
+
+---
+
+### Testimonial Component
+
+A stylish testimonial component with image support.
+
+**Features:**
+
+- Responsive layout with image
+- Built-in quote styling
+- Professional typography for name and title
+
+**Basic Usage:**
+
+```jsx
+import TestimonialWithImage from "./components/Testimonial/TestimonialWithImage";
+import testimonialImg from "./assets/testimonial.jpg";
+
+<TestimonialWithImage
+  img={{ src: testimonialImg, alt: "Customer photo" }}
+  name="Sarah Dole"
+  title="CTO at TechCorp"
+>
+  "This library has saved us hundreds of hours of development time."
+</TestimonialWithImage>;
+```
+
+**Props:**
+
+| Prop       | Type   | Description                                  |
+| ---------- | ------ | -------------------------------------------- |
+| `children` | node   | The testimonial quote text                   |
+| `img`      | object | Image object with `src` and `alt` properties |
+| `name`     | string | Name of the person providing the testimonial |
+| `title`    | string | Job title or role                            |
+
+---
+
 ## 🎨 Styling
 
 The component library uses a modular CSS architecture:
