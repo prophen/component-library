@@ -89,13 +89,17 @@
   .testimonial {
     display: flex;
     flex-direction: column;
-    width: 23.5rem;
+    width: 100%;
+    max-width: 23.5rem;
     margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .testimonial-photo {
     top: -98px;
     transform: translateX(-32px);
-    width: 21.5rem;
+    width: 90%;
+    max-width: 21.5rem;
     height: 12.875rem;
     overflow: hidden;
     border-radius: 0.75rem;
@@ -111,7 +115,7 @@
     flex-direction: column;
     padding: 30px 2rem 0 2rem;
     height: 36.9rem;
-    min-width: 23.5rem;
+    width: 100%;
     justify-content: center;
   }
   .text-group {
