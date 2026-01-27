@@ -4,6 +4,7 @@ import MenuDemo from "./components/Demo/MenuDemo";
 import ButtonDemo from "./components/Demo/ButtonDemo";
 import BadgeDemo from "./components/Demo/BadgeDemo";
 import BannerDemo from "./components/Demo/BannerDemo";
+import CardDemo from "./components/Demo/CardDemo";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <ButtonDemo />
       <BadgeDemo />
       <BannerDemo />
+      <CardDemo />
     </div>
   );
 }
