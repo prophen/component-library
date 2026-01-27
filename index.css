@@ -1,0 +1,10 @@
+/* Global styles and design tokens */
+@import "./style.css";
+
+/* Component styles */
+@import "./components/Button/Button.css";
+@import "./components/Menu/Menu.css";
+
+/* Example components */
+@import "./examples/Star/Star.css";
+@import "./examples/Box/Box.css";
