@@ -85,7 +85,7 @@
   line-height: 1.5rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1100px) {
   .testimonial {
     display: flex;
     flex-direction: column;
@@ -94,12 +94,10 @@
   }
   .testimonial-photo {
     top: -98px;
-    transform: unset;
-    left: 4%;
+    transform: translateX(-32px);
     width: 21.5rem;
     height: 12.875rem;
     overflow: hidden;
-
     border-radius: 0.75rem;
   }
   .testimonial-photo img {
@@ -113,6 +111,7 @@
     flex-direction: column;
     padding: 30px 2rem 0 2rem;
     height: 36.9rem;
+    min-width: 23.5rem;
     justify-content: center;
   }
   .text-group {
