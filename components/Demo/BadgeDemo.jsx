@@ -1,5 +1,7 @@
 import React from "react";
 import Badge from "../Badge/Badge";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 export default function BadgeDemo() {
   return (
@@ -52,7 +54,16 @@ export default function BadgeDemo() {
       </div>
 
       <div className="code-example">
-        <code>{`import Badge from "./components/Badge/Badge";
+        <SyntaxHighlighter
+          language="jsx"
+          style={vscDarkPlus}
+          customStyle={{
+            borderRadius: "8px",
+            fontSize: "0.875rem",
+            margin: 0,
+          }}
+        >
+          {`import Badge from "./components/Badge/Badge";
 
 function MyComponent() {
   return (
@@ -77,7 +88,8 @@ function MyComponent() {
       </Badge>
     </>
   );
-}`}</code>
+}`}
+        </SyntaxHighlighter>
       </div>
 
       <h3>Props</h3>

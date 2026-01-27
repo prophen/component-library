@@ -1,5 +1,7 @@
 import React from "react";
 import Button from "../Button/Button";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 export default function ButtonDemo() {
   return (
@@ -41,7 +43,16 @@ export default function ButtonDemo() {
       </div>
 
       <div className="code-example">
-        <code>{`import Button from "./components/Button/Button";
+        <SyntaxHighlighter
+          language="jsx"
+          style={vscDarkPlus}
+          customStyle={{
+            borderRadius: "8px",
+            fontSize: "0.875rem",
+            margin: 0,
+          }}
+        >
+          {`import Button from "./components/Button/Button";
 
 function MyComponent() {
   return (
@@ -70,7 +81,8 @@ function MyComponent() {
       </Button>
     </>
   );
-}`}</code>
+}`}
+        </SyntaxHighlighter>
       </div>
 
       <h3>Props</h3>

@@ -14,7 +14,16 @@ body {
     BlinkMacSystemFont,
     "Segoe UI",
     sans-serif;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(
+    135deg,
+    #667eea 0%,
+    #6d7aeb 25%,
+    #7476ec 50%,
+    #7a72e8 75%,
+    #764ba2 100%
+  );
+  background-attachment: fixed;
+  background-size: 100% 100%;
   color: #1a202c;
 }
 
@@ -32,7 +41,14 @@ h1 {
   font-size: 3rem;
   font-weight: 800;
   margin: 0 0 12px 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(
+    135deg,
+    #667eea 0%,
+    #6d7aeb 25%,
+    #7476ec 50%,
+    #7a72e8 75%,
+    #764ba2 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -92,20 +108,8 @@ h3 {
 
 /* Code examples */
 .code-example {
-  background: #2d3748;
-  color: #e2e8f0;
-  padding: 20px;
-  border-radius: 8px;
-  font-family: "Monaco", "Courier New", monospace;
-  font-size: 0.875rem;
-  overflow-x: auto;
   margin-top: 16px;
-  line-height: 1.6;
-}
-
-.code-example code {
-  color: #e2e8f0;
-  white-space: pre;
+  overflow-x: auto;
 }
 
 /* Usage instructions */

@@ -1,5 +1,7 @@
 import React from "react";
 import Banner from "../Banner/Banner";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 export default function BannerDemo() {
   return (
@@ -69,7 +71,16 @@ export default function BannerDemo() {
       </div>
 
       <div className="code-example">
-        <code>{`import Banner from "./components/Banner/Banner";
+        <SyntaxHighlighter
+          language="jsx"
+          style={vscDarkPlus}
+          customStyle={{
+            borderRadius: "8px",
+            fontSize: "0.875rem",
+            margin: 0,
+          }}
+        >
+          {`import Banner from "./components/Banner/Banner";
 
 function MyComponent() {
   return (
@@ -96,7 +107,8 @@ function MyComponent() {
       </Banner>
     </>
   );
-}`}</code>
+}`}
+        </SyntaxHighlighter>
       </div>
 
       <h3>Props</h3>

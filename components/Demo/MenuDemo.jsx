@@ -1,5 +1,7 @@
 import React from "react";
 import Menu from "../Menu/index";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 export default function MenuDemo() {
   return (
@@ -29,7 +31,16 @@ export default function MenuDemo() {
       </div>
 
       <div className="code-example">
-        <code>{`import Menu from "./components/Menu";
+        <SyntaxHighlighter
+          language="jsx"
+          style={vscDarkPlus}
+          customStyle={{
+            borderRadius: "8px",
+            fontSize: "0.875rem",
+            margin: 0,
+          }}
+        >
+          {`import Menu from "./components/Menu";
 
 function MyComponent() {
   return (
@@ -43,7 +54,8 @@ function MyComponent() {
       </Menu.Dropdown>
     </Menu>
   );
-}`}</code>
+}`}
+        </SyntaxHighlighter>
       </div>
 
       <h3>Props</h3>
