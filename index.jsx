@@ -5,6 +5,7 @@ import ButtonDemo from "./components/Demo/ButtonDemo";
 import BadgeDemo from "./components/Demo/BadgeDemo";
 import BannerDemo from "./components/Demo/BannerDemo";
 import CardDemo from "./components/Demo/CardDemo";
+import TestimonialWithImageDemo from "./components/Demo/TestimonialWithImageDemo";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <BadgeDemo />
       <BannerDemo />
       <CardDemo />
+      <TestimonialWithImageDemo />
     </div>
   );
 }
