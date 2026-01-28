@@ -10,7 +10,7 @@ export default function TestimonialWithImageDemo() {
       <div className="usage-section">
         <h4>📖 Usage</h4>
         <p>
-          The Tesimonial with Image component displays a quote, author details,
+          The Testimonial with Image component displays a quote, author details,
           and an associated image. It is useful for social proof sections.
         </p>
       </div>
