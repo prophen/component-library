@@ -28,12 +28,6 @@ export default function TestimonialWithImageDemo() {
             and depth of creativity are astounding!"
           </TestimonialWithImage>
         </div>
-        <div className="hide-on-mobile">
-          <h3>Mobile</h3>
-          <div className="demo-group">
-            <img src="/mobile.png" alt="mobile testimonial view" />
-          </div>
-        </div>
       </div>
 
       <div className="code-example">
